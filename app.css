@@ -1,0 +1,90 @@
+/* 
+colors:
+white #FFFFFF
+grey #EAEAEE
+light blue #8EB6DC
+dark blue #1470AF
+black #000000
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  /* background-color: #EAEAEE; */
+}
+
+h1 {
+  font-family: "Manrope";
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+
+#intro {
+  /* width: 100%; */
+  height: 800px;
+  background: url("images/background\ gradient.png") no-repeat center center / cover fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-content {
+  height: 30%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+#intro-content h1 {
+  font-family: "Manrope";
+  font-size: 70px;
+  font-weight: 450;
+}
+
+#intro-content p {
+  width: 60%;
+  font-family: "Nunito Sans";
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#about {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  background-color: #8EB6DC;
+  /* border: 1px solid red; */
+}
+
+#about-title {
+  width: 40%;
+}
+
+#about-description {
+  width: 50%;
+}
+
+#about-title h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+#about-description p {
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
