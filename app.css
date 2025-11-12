@@ -15,8 +15,17 @@ black #000000
   /* background-color: #EAEAEE; */
 }
 
-h1 {
+body {
+  background-color: #EAEAEE;
+}
+
+h1,
+h2 {
   font-family: "Manrope";
+}
+
+p {
+  font-family: "Nunito Sans";
 }
 
 #header {
@@ -36,8 +45,9 @@ h1 {
 
 #intro {
   /* height: 800px; */
-  height: 800px;
-  background: url("images/background\ gradient.png") no-repeat center center / cover fixed;
+  height: 850px;
+  /* background: url("images/background\ gradient.png") no-repeat center center / cover fixed; */
+  background-color: #EAEAEE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,10 +71,11 @@ h1 {
 }
 
 #intro-content p {
-  width: 90%;
+  width: 70%;
   font-family: "Nunito Sans";
   font-size: 17px;
   font-weight: 300;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -79,13 +90,13 @@ h1 {
 
   #intro-content p {
     width: 60%;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 300;
   }
 }
 
 #about {
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -101,6 +112,7 @@ h1 {
 
 #about-description {
   width: 80%;
+  text-align: center;
 }
 
 #about-title h1 {
@@ -110,7 +122,7 @@ h1 {
 
 #about-description p {
   font-family: "Nunito Sans";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -135,5 +147,195 @@ h1 {
 @media (min-width: 1025px) {
   #about-title h1 {
     font-size: 70px;
+  }
+
+  #about-description p {
+    font-size: 19px;
+  }
+}
+
+#container {
+  background: #EAEAEE;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 5%;
+}
+
+#carousel-track {
+  /* border: 1px solid red; */
+  /* Shows us what we are working with */
+  width: 300px;
+  height: 300px;
+  white-space: nowrap;
+  /* Prevents wrapping */
+  overflow: hidden;
+  font-size: 0px;
+  background: #8EB6DC;
+}
+
+.carousel-item {
+  height: 300px;
+  width: 300px;
+
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  margin-right: 6px;
+  transition: transform 0.3s ease;
+  /* border-radius: 5%; */
+}
+
+.carousel-content {
+  /* border: 1px solid red; */
+  height: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.carousel-content h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 10%;
+}
+
+.carousel-content p {
+  text-align: center;
+}
+
+.carousel-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #EAEAEE;
+  color: #1470AF;
+  border-radius: 50%;
+  font-family: "Manrope";
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  #container {
+    width: 80%;
+  }
+
+  #carousel-track {
+    width: 400px;
+    height: 400px;
+  }
+
+  .carousel-item {
+    width: 400px;
+    height: 400px;
+  }
+
+  .carousel-button {
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #container {
+    width: 60%;
+  }
+
+  #carousel-track {
+    width: 400px;
+    height: 400px;
+  }
+
+  .carousel-item {
+    width: 400px;
+    height: 400px;
+    /* border-radius: 10%; */
+  }
+
+  .carousel-button {
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+  }
+
+  .carousel-content h2 {
+    margin-bottom: 5%;
+  }
+}
+
+#contact {
+  width: 100%;
+  height: 500px;
+  background-color: #8EB6DC;
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  justify-content: space-around;
+}
+
+#form-container {
+  height: 80%;
+}
+
+#form-container form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+input[name="name"],
+input[name="email"] {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #8EB6DC;
+  width: 80%;
+  height: 30px;
+}
+
+textarea[name="message"] {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #8EB6DC;
+  width: 80%;
+  height: 80px;
+}
+
+#form-container button {
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: #8EB6DC;
+}
+
+@media (min-width: 768px) {
+  #contact {
+    padding: 5%;
+    /* flex-direction: row; */
+    /* TODO: implement row display */
+  }
+
+  input[name="name"],
+  input[name="email"] {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #contact {
+    padding: 2%;
   }
 }

@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -24,14 +25,73 @@
         mentors.</p>
     </div>
   </div>
+
   <div id="about">
     <div id="about-title">
       <h1>About our company</h1>
     </div>
     <div id="about-description">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, nihil, cum dicta minus blanditiis optio
-        cumque, voluptatem delectus maxime odio ut repellendus labore ducimus tenetur reiciendis mollitia placeat facere
-        temporibus!</p>
+      <p>Xi Botics Labs is an initiative designed to bridge the gap between education and real-world innovation. While
+        our roots began on a college campus, we operate as an independent organization with a clear mission: to empower
+        aspiring engineers through hands-on, project-based experiences that serve both personal development and
+        community impact.</p>
+
+      <p>Our company connects student engineers with industry mentors, sponsors, and resources to design and execute
+        meaningful projects—ranging from local community solutions to large-scale innovations. We aim to provide a
+        platform where students can build technical skills, leadership experience, and professional networks while
+        contributing tangible benefits to society.</p>
+
+      <p>Built on collaboration, sustainability, and lifelong learning, this startup is more than a stepping stone—it’s
+        a
+        foundation for the next generation of engineers to innovate with purpose. Our organization is designed to endure
+        beyond a student’s graduation, ensuring continuity, mentorship, and growth for years to come. </p>
+    </div>
+  </div>
+
+  <div id="container">
+    <button class="carousel-button" onclick="moveCarousel('backward')">&lt;</button>
+    <div id="carousel-track">
+      <div class="carousel-item">
+        <div class="carousel-content">
+          <h2>VERDANT</h2>
+          <p>Mobile Robotic System used to automate the care of organic crops for the greenhouse Grow Beach at Cal State
+            University, Long Beach</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-content">
+          <h2>COMING SOON</h2>
+          <p>More Projects are coming soon</p>
+          <p>Contact us with any project ideas of your own</p>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-content">
+          <h2>COMING SOON</h2>
+          <p>More Projects are coming soon</p>
+          <p>Contact us with any project ideas of your own</p>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-button" onclick="moveCarousel('forward')">></button>
+  </div>
+  <div id="contact">
+    <h1>Contact Us</h1>
+    <p>Interested in working together? Fill out some info and we will be in touch shortly. We can’t wait to hear from
+      you!</p>
+    <div id="form-container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2a7c55d0-5f72-4ef1-9050-7d85ae3c2edb">
+        <p>Name:</p>
+        <input type="text" name="name" required>
+        <p>Email:</p>
+        <input type="email" name="email" required>
+        <p>Message:</p>
+        <textarea name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
 </body>
