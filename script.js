@@ -31,7 +31,7 @@ function moveCarousel(direction) {
     offset = 406 * position;
   }
   else {
-    offset = 306 * position;
+    offset = 256 * position;
   }
   document.querySelectorAll('.carousel-item').forEach(carouselItemElement => {
     carouselItemElement.style.transform = `translateX(-${offset}px)`;
