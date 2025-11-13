@@ -20,7 +20,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Manrope";
 }
 
@@ -343,4 +344,35 @@ textarea[name="message"] {
   #contact {
     padding: 2%;
   }
+}
+
+#thanks {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#thanks>* {
+  padding: 5% 0;
+}
+
+#return {
+  height: 50px;
+  width: 120px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #8EB6DC;
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans";
+  padding: 0;
 }
