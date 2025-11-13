@@ -187,7 +187,7 @@ p {
   display: inline-block;
   color: #000000;
   font-size: 16px;
-  margin-right: 6px;
+  /* margin-right: 6px; */
   transition: transform 0.3s ease;
   /* border-radius: 5%; */
 }
@@ -200,8 +200,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-overflow: clip;
+  /* text-overflow: clip; */
   white-space: normal;
+  /* white-space: unset; */
 }
 
 .carousel-content h2 {
@@ -213,6 +214,7 @@ p {
 
 .carousel-content p {
   text-align: center;
+  /* font-size: 11px; */
 }
 
 .carousel-button {
@@ -272,7 +274,7 @@ p {
   }
 
   .carousel-content h2 {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
   }
 }
 
